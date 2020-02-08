@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Scripts for React and Babel -->
+    <script
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Scripts for React and Babel END -->
+
+    <!-- CDNs for Bootstrap and FontAwesome -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <!-- CDNs for Bootstrap and FontAwesome END -->
+
+    <!-- Styles and Scripts -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <script type="text/babel" src="./app/Comment.jsx"></script>
+    <script type="text/babel" src="./app/Article.jsx"></script>
+    <script type="text/babel" src="./app/app.jsx"></script>
+    <!-- Styles and Scripts END -->
+  </head>
+  <body>
+    <script type="text/javascript">
+      document.__article = {
+        author: "Eliana Franco",
+        date: "2017-09-10T22:00:05.919Z",
+        text: `Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.`
+      };
+
+      document.__comments = [
+        {
+          id: 1,
+          author: "Germán Toro",
+          text: "Great!",
+          date: "2017-09-11T12:00:39.430Z"
+        },
+        {
+          id: 2,
+          author: "Elena Builes",
+          text: "Awesome!",
+          date: "2017-09-11T12:30:39.430Z"
+        }
+      ];
+
+      document.__moreComments = [
+        {
+          id: 3,
+          author: "Germán Toro",
+          text: "Splendid!",
+          date: "2017-09-11T14:30:05.919Z"
+        },
+        {
+          id: 4,
+          author: "Elena Builes",
+          text: "Excelent!",
+          date: "2017-09-11T11:30:05.919Z"
+        }
+      ];
+    </script>
+
+    <div id="APP" class="h-100"></div>
+  </body>
+</html>

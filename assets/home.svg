@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333333 4.2333333"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="home.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="22.627417"
+     inkscape:cx="2.1933129"
+     inkscape:cy="10.647372"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-intersection-paths="false"
+     inkscape:object-nodes="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:snap-nodes="true">
+    <sodipodi:guide
+       position="0,0"
+       orientation="0,16"
+       id="guide1366"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="4.2333333,0"
+       orientation="-16,0"
+       id="guide1368"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-0.76839989,4.2261994"
+       orientation="0,-16"
+       id="guide1370"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,4.2333333"
+       orientation="16,0"
+       id="guide1372"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,2.1166733"
+       orientation="0,1"
+       id="guide1377"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="2.1166666,4.2333433"
+       orientation="1,0"
+       id="guide1379"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1.5874999,3.3333332e-006"
+       orientation="1,0"
+       id="guide1381"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="2.6458332,3.3333332e-006"
+       orientation="1,0"
+       id="guide1383"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="3.1749998,3.3333332e-006"
+       orientation="1,0"
+       id="guide1385"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1.0583333,3.3333332e-006"
+       orientation="1,0"
+       id="guide1387"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0.52916666,1.2987629"
+       orientation="1,0"
+       id="guide1405"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="3.7041666,1.5702085"
+       orientation="1,0"
+       id="guide1407"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-292.76667)">
+    <g
+       id="g841"
+       style="fill:#ffffff">
+      <path
+         id="path830"
+         transform="matrix(0.26458333,0,0,0.26458333,0,292.76667)"
+         d="M 7.984375,0.02734375 0.02734375,8.1347656 1.4160156,8.953125 8,2.2226562 14.583984,8.953125 15.972656,8.1347656 12.75,4.8496094 V 0.58398438 H 10.195312 V 2.2480469 L 8.015625,0.02734375 Z"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10946488;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      <path
+         transform="matrix(0.26458333,0,0,0.26458333,0,292.76667)"
+         id="path834"
+         d="M 8 3.359375 L 2.3476562 9.0664062 L 2.3476562 16 L 6.1152344 16 L 6.1152344 12.351562 L 9.8847656 12.351562 L 9.8847656 16 L 13.652344 16 L 13.652344 9.0664062 L 8 3.359375 z "
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.01729047;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    </g>
+  </g>
+</svg>
