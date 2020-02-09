@@ -70,11 +70,15 @@ const Footer = () => {
 class Application extends React.Component {
   constructor(props) {
     super(props);
+    const height = document.getElementById("moreCommentsContainer")
+      ? document.getElementById("moreCommentsContainer").clientHeight
+      : 0;
     this.state = {
       isLoadMoreShown: true,
       showComments: false,
       showArticle: false,
-      fadeDivOut: true
+      fadeDivOut: true,
+      height
     };
   }
 
@@ -88,7 +92,12 @@ class Application extends React.Component {
   }
 
   changeFade() {
-    this.setState({ fadeDivOut: !this.state.fadeDivOut });
+    this.setState({
+      fadeDivOut: !this.state.fadeDivOut,
+      height: document.getElementById("moreCommentsContainer")
+        ? document.getElementById("moreCommentsContainer").clientHeight
+        : 0
+    });
     setTimeout(() => {
       this.setState({
         isLoadMoreShown: !this.state.isLoadMoreShown
@@ -111,11 +120,14 @@ class Application extends React.Component {
             />
           )}
           {!this.state.showArticle && (
-            <div className="spinner-grow d-block mx-auto __text-highlight"></div>
+            <div className="__first-spinner spinner-grow d-block mx-auto __text-highlight"></div>
           )}
 
           {this.state.showComments && (
-            <div className="d-flex flex-column align-items-center">
+            <div
+              id="allComments"
+              className="w-75 mx-auto d-flex flex-column align-items-center"
+            >
               <h2 className="animated fadeInUp text-center my-5 __dash __text-primary">
                 Comments
               </h2>
@@ -131,9 +143,16 @@ class Application extends React.Component {
 
               {/* button for load more was clicked therefore display rest of comments */}
               <div
-                className={`w-100 d-flex flex-column align-items-center ${
-                  this.state.fadeDivOut ? "animated fadeOut" : null
-                }`}
+                id="moreCommentsContainer"
+                className={`w-100 flex-column align-items-center animated __transition 
+                ${this.state.fadeDivOut ? "fadeOut" : ""} 
+                ${this.state.isLoadMoreShown ? "d-none" : "d-flex"}`}
+                style={{
+                  visibility: this.state.fadeDivOut ? "hidden" : "",
+                  marginTop: this.state.fadeDivOut
+                    ? "-" + (this.state.height - 45) + "px"
+                    : ""
+                }}
               >
                 {!this.state.isLoadMoreShown && (
                   <MoreComments moreComments={sorted_comments.slice(2)} />

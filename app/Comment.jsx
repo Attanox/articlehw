@@ -3,7 +3,7 @@ class Comment extends React.Component {
     const { index, author, text, date } = this.props;
     return (
       <div
-        className={`w-75 d-flex justify-content-between align-items-center mb-5 ${
+        className={`__comment-row w-100 d-flex justify-content-between align-items-center mb-5 ${
           index % 2 !== 0 ? "flex-row-reverse" : null
         }`}
       >
@@ -25,7 +25,7 @@ class Comment extends React.Component {
 const Avatar = ({ index, author, date }) => {
   return (
     <div
-      className={`w-25 d-flex justify-content-center align-items-center ${
+      className={`__avatar w-25 d-flex justify-content-center align-items-center ${
         index % 2 !== 0
           ? "flex-row-reverse animated fadeInLeft"
           : "animated fadeInRight"

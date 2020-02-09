@@ -157,12 +157,67 @@ body {
   line-height: 2rem;
 }
 
+.__first-spinner {
+  position: relative;
+  top: 25vh;
+  width: 5rem;
+  height: 5rem;
+}
+
 .__transition {
-  transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.5s ease;
 }
 
 .__rotate180 {
   transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 375px) {
+  .__comment-row {
+    flex-direction: column !important;
+  }
+  .__comment-row > * {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .__comment-row .__comment {
+    margin-bottom: 1.3rem !important;
+    margin-top: 0.7rem !important;
+  }
+  .__comment-row .__comment.__odd {
+    border-radius: 20px 20px 0 20px;
+  }
+  .__comment-row .__comment.__odd::after {
+    top: 100px;
+    right: 0;
+  }
+  .__comment-row .__comment.__even {
+    border-radius: 20px 20px 20px 0;
+  }
+  .__comment-row .__comment.__even::after {
+    top: 93px;
+    left: -7px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .__article {
+    padding-right: 1.7rem;
+  }
+  .__article .__long-paragraph {
+    width: 100% !important;
+  }
+
+  #allComments .__comments {
+    width: 35% !important;
+  }
+  #allComments .__avatar {
+    width: 65% !important;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  #allComments {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
