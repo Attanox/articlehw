@@ -1,0 +1,169 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $light;
+  height: 100%;
+}
+
+::selection {
+  background-color: $highlight;
+  color: $light;
+}
+
+.__options {
+  font-size: 2rem;
+  .fa-home {
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.__article {
+  border-radius: 0 30px 30px 0;
+  padding: 5rem;
+  padding-left: 100rem;
+  margin-left: -100rem;
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+  }
+}
+
+.__dash,
+.__dash-white {
+  &::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 30px;
+  }
+}
+
+.__dash::after {
+  background-color: $primary;
+  margin: 0.5rem auto 0 auto;
+}
+
+.__dash-white::after {
+  background-color: $light;
+  margin: 1rem 0 0 0;
+}
+
+.__comment {
+  padding: 1rem;
+  height: 100px;
+  p.text-justify {
+    margin: 0;
+  }
+  &.__odd {
+    border-radius: 20px 0 20px 20px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 20px 0 0;
+      border-color: $secondary transparent transparent transparent;
+      position: absolute;
+      top: 0px;
+      right: -20px;
+    }
+  }
+  &.__even {
+    border-radius: 0 20px 20px 20px;
+    box-sizing: border-box;
+    position: relative;
+    &.__thicker-border {
+      border-width: 7px !important;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 20px 20px 0;
+      border-color: transparent $primary transparent transparent;
+      position: absolute;
+      top: -7px;
+      left: -27px;
+    }
+  }
+}
+
+.__user-img {
+  font-size: 3.5rem;
+}
+
+.__text-light {
+  color: $light !important;
+}
+
+.__text-primary {
+  color: $primary !important;
+}
+
+.__text-highlight {
+  color: $highlight !important;
+}
+
+.__text-muted {
+  opacity: 0.8;
+}
+
+.__bg-primary {
+  background-color: $primary;
+  background: linear-gradient(
+    105deg,
+    rgba(45, 45, 68, 1) 70%,
+    rgba(30, 30, 44, 1) 100%
+  );
+}
+
+.__bg-light {
+  background-color: $light !important;
+}
+
+.__border-primary {
+  border-color: $primary !important;
+}
+
+.__btn-primary {
+  color: $light;
+  background-color: $highlight;
+  border-color: $highlight;
+  letter-spacing: 0.05em;
+}
+
+.__btn-primary:hover,
+.__btn-primary:active,
+.__btn-primary:focus {
+  /* let's darken #004E64 a bit for hover effect */
+  background: rgb(255, 158, 73);
+  color: $light;
+  border-color: rgb(255, 158, 73);
+}
+
+.__btn-primary:focus {
+  box-shadow: rgba(255, 158, 73, 0.25) 0px 0px 0px 0.2rem;
+  outline: 0px;
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.__long-paragraph {
+  font-family: "Playfair Display", serif;
+  line-height: 2rem;
+}
+
+.__first-spinner {
+  position: relative;
+  top: 25vh;
+  width: 5rem;
+  height: 5rem;
+}

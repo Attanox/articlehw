@@ -1,0 +1,51 @@
+@media only screen and (max-width: 375px) {
+  .__comment-row {
+    flex-direction: column !important;
+    & > * {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+    .__comment {
+      margin-bottom: 1.3rem !important;
+      margin-top: 0.7rem !important;
+      &.__odd {
+        border-radius: 20px 20px 0 20px;
+        &::after {
+          top: 100px;
+          right: 0;
+        }
+      }
+      &.__even {
+        border-radius: 20px 20px 20px 0;
+        &::after {
+          top: 93px;
+          left: -7px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .__article {
+    padding-right: 1.7rem;
+    .__long-paragraph {
+      width: 100% !important;
+    }
+  }
+
+  #allComments {
+    .__comments {
+      width: 35% !important;
+    }
+    .__avatar {
+      width: 65% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  #allComments {
+    width: 100% !important;
+  }
+}
