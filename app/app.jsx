@@ -35,6 +35,7 @@ const Header = () => {
                 src="./assets/article.svg"
                 width="24px"
                 alt="articles button"
+                className="__active"
               />
             </a>
           </li>
@@ -78,7 +79,8 @@ class Application extends React.Component {
       showComments: false,
       showArticle: false,
       fadeDivOut: true,
-      height
+      height,
+      comments: sorted_comments
     };
   }
 
@@ -104,6 +106,10 @@ class Application extends React.Component {
       });
     }, 500);
   }
+
+  handleSubmit = comment => {
+    this.setState({ comments: [comment, ...this.state.comments] });
+  };
 
   render() {
     return (
@@ -132,7 +138,7 @@ class Application extends React.Component {
                 Comments
               </h2>
               {/* display first 2 comments */}
-              {sorted_comments.slice(0, 2).map((comment, index) => (
+              {this.state.comments.slice(0, 2).map((comment, index) => (
                 <Comment
                   index={index}
                   author={comment.author}
@@ -155,7 +161,7 @@ class Application extends React.Component {
                 }}
               >
                 {!this.state.isLoadMoreShown && (
-                  <MoreComments moreComments={sorted_comments.slice(2)} />
+                  <MoreComments moreComments={this.state.comments.slice(2)} />
                 )}
               </div>
 
@@ -187,6 +193,7 @@ class Application extends React.Component {
               </button>
             </div>
           )}
+          {this.state.showComments && <Form handleSubmit={this.handleSubmit} />}
           {!this.state.showComments && this.state.showArticle && (
             <div className="spinner-grow d-block my-4 mx-auto __text-highlight"></div>
           )}
