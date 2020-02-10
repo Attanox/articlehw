@@ -7,7 +7,7 @@ class Article extends React.Component {
     return (
       <div
         className={
-          "animated slideInLeft __article shadow-lg __bg-primary __text-light"
+          "animated slideInLeft __article shadow-lg __bg-primary my-4 __text-light"
         }
       >
         <h1 className="mb-4 d-inline-block __dash-white">

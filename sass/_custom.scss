@@ -141,7 +141,7 @@ body {
 .__btn-primary:hover,
 .__btn-primary:active,
 .__btn-primary:focus {
-  /* let's darken #004E64 a bit for hover effect */
+  /* darken $highlight a bit for hover effect */
   background: rgb(255, 158, 73);
   color: $light;
   border-color: rgb(255, 158, 73);

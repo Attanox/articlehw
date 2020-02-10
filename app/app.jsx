@@ -134,7 +134,7 @@ class Application extends React.Component {
               id="allComments"
               className="w-75 mx-auto d-flex flex-column align-items-center"
             >
-              <h2 className="animated fadeInUp text-center my-5 __dash __text-primary">
+              <h2 className="animated fadeInUp text-center my-4 __dash __text-primary">
                 Comments
               </h2>
               {/* display first 2 comments */}
@@ -183,7 +183,7 @@ class Application extends React.Component {
                 onClick={() => this.changeFade()}
               >
                 {/* depending on variable, change content of button */}
-                {this.state.fadeDivOut ? "Load More " : "Hide "}
+                {this.state.fadeDivOut ? "More " : "Hide "}
 
                 <i
                   className={`__transition fa fa-angle-down ${

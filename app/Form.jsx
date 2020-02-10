@@ -15,17 +15,48 @@ class Form extends React.Component {
   };
 
   handleSubmit = event => {
+    event.preventDefault();
     const d = new Date();
+    if (
+      this.state.author === this.initialState.author ||
+      this.state.text === this.initialState.text
+    )
+      return;
     this.props.handleSubmit({ ...this.state, date: d });
     this.setState(this.initialState);
-    event.preventDefault();
   };
+
+  updateComments() {
+    if (
+      this.state.author === this.initialState.author ||
+      this.state.text === this.initialState.text
+    )
+      return;
+    const allComments = document.querySelectorAll(".__comment-row");
+    allComments.forEach((comment, index) => {
+      // remove class and immediately add class back
+      comment.style.visibility = "hidden";
+      if (index % 2 !== 0) {
+        comment.classList.remove("fadeInLeft");
+        setTimeout(() => {
+          comment.style.visibility = "visible";
+          comment.classList.add("fadeInLeft");
+        }, 200);
+      } else {
+        comment.classList.remove("fadeInRight");
+        setTimeout(() => {
+          comment.style.visibility = "visible";
+          comment.classList.add("fadeInRight");
+        }, 200);
+      }
+    });
+  }
 
   render() {
     return (
       <form
         onSubmit={this.handleSubmit}
-        class="__form mb-4 __bg-primary"
+        class="__form animated slideInRight my-4 __bg-primary"
         width="5rem"
       >
         <div className="form-group">
@@ -39,6 +70,7 @@ class Form extends React.Component {
             type="text"
             value={this.state.author}
             onChange={this.handleChange}
+            required
           />
         </div>
         <div className="form-group">
@@ -52,14 +84,18 @@ class Form extends React.Component {
             value={this.state.text}
             onChange={this.handleChange}
             placeholder="Write you comment here..."
+            required
           ></textarea>
         </div>
-        <input
+        <button
           className="btn __btn-primary mb-4"
-          type="submit"
-          value="Submit"
-          onClick={this.handleSubmit}
-        />
+          onClick={() => {
+            this.handleSubmit;
+            this.updateComments(this.state);
+          }}
+        >
+          Submit
+        </button>
       </form>
     );
   }

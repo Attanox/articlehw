@@ -3,15 +3,17 @@ class Comment extends React.Component {
     const { index, author, text, date } = this.props;
     return (
       <div
-        className={`__comment-row w-100 d-flex justify-content-between align-items-center mb-5 ${
-          index % 2 !== 0 ? "flex-row-reverse" : null
+        className={`__comment-row w-100 d-flex justify-content-between align-items-center animated mb-5 ${
+          index % 2 !== 0
+            ? "__even fadeInLeft flex-row-reverse"
+            : "__odd fadeInRight"
         }`}
       >
         <div
-          className={`__comment w-75 d-flex align-items-center animated shadow-lg ${
+          className={`__comment w-75 d-flex align-items-center shadow-lg ${
             index % 2 !== 0
-              ? "__even border __border-primary __thicker-border __bg-light __text-primary ml-5 fadeInLeft"
-              : "__odd __bg-primary __text-light mr-5 fadeInRight"
+              ? "__even border __border-primary __thicker-border __bg-light __text-primary ml-5"
+              : "__odd __bg-primary __text-light mr-5"
           }`}
         >
           <p className="text-justify">{text}</p>
