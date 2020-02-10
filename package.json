@@ -1,0 +1,23 @@
+{
+  "name": "whys-blog",
+  "version": "1.0.0",
+  "description": "Single page website displaying article and comments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Attanox/articlehw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Attanox/articlehw/issues"
+  },
+  "homepage": "https://attanox.github.io/articlehw/app.html",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
